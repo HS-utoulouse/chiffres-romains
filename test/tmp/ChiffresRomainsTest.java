@@ -30,6 +30,11 @@ class ChiffresRomainsTest {
 		assertThrows(IllegalArgumentException.class, () -> c.toChiffresRomains(40000));
 	}
 	
+	@Test
+	void ITER4() {
+		assertEquals(c.toChiffresRomains(4), "IV");
+	}
+	
 	
 
 }

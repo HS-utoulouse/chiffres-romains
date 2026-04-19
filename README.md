@@ -1,8 +1,7 @@
 - [x] ITER1  : 1 donne “I”
 - [x] ITER2  : les unités simples : 2 et 3
-- [x] ITER2  : les unités simples : 2 et 3
-- [ ] ITER3  : Robustesse et cas limites
-- [ ] ITER4  : Première valeur spéciale : 4 –> “IV”
+- [x] ITER3  : Robustesse et cas limites
+- [x] ITER4  : Première valeur spéciale : 4 –> “IV”
 - [ ] ITER5  : La valeur 5 et au-delà : 5, 6, 8
 - [ ] ITER6  : Deuxième cas soustractif : 9 –> “IX”
 - [ ] ITER7  : Les dizaines

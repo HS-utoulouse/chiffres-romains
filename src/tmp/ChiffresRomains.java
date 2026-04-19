@@ -18,6 +18,8 @@ public class ChiffresRomains {
 			return "II";
 		}else if(nbr == 3) {
 			return "III";
+		}else if(nbr == 4) {
+			return "IV";
 		}
 		return "";
 		
