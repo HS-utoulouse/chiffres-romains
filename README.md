@@ -6,5 +6,5 @@
 - [x] ITER6  : Deuxième cas soustractif : 9 –> “IX”
 - [x] ITER7  : Les dizaines
 - [x] ITER8  : le petit mix : 11 –> “XI”, 34 –> “XXXIV”
-- [ ] ITER9  : extension aux centaines et aux milliers : 100 –> “C”, 2000 –> “MM”
+- [X] ITER9  : extension aux centaines et aux milliers : 100 –> “C”, 2000 –> “MM”
 - [ ] ITER10 :Le grand mix : cas complexes

@@ -57,4 +57,10 @@ class ChiffresRomainsTest {
 		assertEquals(c.toChiffresRomains(11), "XI");
 		assertEquals(c.toChiffresRomains(34), "XXXIV");
 	}
+	
+	@Test
+	void ITER9() {
+		assertEquals(c.toChiffresRomains(100), "C");
+		assertEquals(c.toChiffresRomains(2000), "MM");
+	}
 }

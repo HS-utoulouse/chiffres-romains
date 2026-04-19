@@ -13,7 +13,17 @@ public class ChiffresRomains {
 
 		String resultat = "";
 		int reste = nbr;
+		
+		while (reste >= 1000) {
+			resultat += "M";
+			reste -= 1000;
+		}
 
+		while (reste >= 100) {
+			resultat += "C";
+			reste -= 100;
+		}
+		
 		while (reste >= 10) {
 			resultat += "X";
 			reste -= 10;
