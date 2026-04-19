@@ -13,22 +13,41 @@ public class ChiffresRomains {
 
         String resultat = "";
         int reste = nbr;
-
-        if (reste >= 5) {
+        
+        
+        	if (reste >= 10) {
+	            resultat += "X";
+	            reste -= 10;
+			    }
+			
+			    if (reste == 9) {
+			        resultat += "IX";
+			        reste -= 9;
+			    }
+        	if (reste >= 5) {
             resultat += "V";
             reste -= 5;
-        }
-
-        if (reste == 4) {
-            resultat += "IV";
-            reste -= 4;
-        }
-
-        while (reste >= 1) {
-            resultat += "I";
-            reste -= 1;
-        }
+		    }
+		
+		    if (reste == 4) {
+		        resultat += "IV";
+		        reste -= 4;
+		    }
+		
+		    while (reste >= 1) {
+		        resultat += "I";
+		        reste -= 1;
+		        }
+        
+		
+	    	
 
         return resultat;
     }
 }
+        
+        
+        
+        
+        
+        
