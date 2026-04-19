@@ -1,5 +1,9 @@
 - [x] ITER1  : 1 donne “I”
+<<<<<<< HEAD
 - [x] ITER2  : les unités simples : 2 et 3
+=======
+- [ ] ITER2  : les unités simples : 2 et 3
+>>>>>>> 3f223c36856b02adf72d5ed1ad6edb894b9427d3
 - [ ] ITER3  : Robustesse et cas limites
 - [ ] ITER4  : Première valeur spéciale : 4 –> “IV”
 - [ ] ITER5  : La valeur 5 et au-delà : 5, 6, 8
