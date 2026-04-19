@@ -8,6 +8,10 @@ public class ChiffresRomains {
 	}
 
 	public String toChiffresRomains(int nbr) {
+		if (nbr <= 0 || nbr >= 4000) {
+			throw new IllegalArgumentException();
+		}
+		
 		if(nbr == 1) {
 			return "I";
 		}else if(nbr == 2) {
