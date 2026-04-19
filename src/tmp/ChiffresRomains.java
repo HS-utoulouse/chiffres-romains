@@ -7,7 +7,15 @@ public class ChiffresRomains {
 		super();
 	}
 
-	public String toChiffresRomains(int nombre) {
-		return "I";
+	public String toChiffresRomains(int nbr) {
+		if(nbr == 1) {
+			return "I";
+		}else if(nbr == 2) {
+			return "II";
+		}else if(nbr == 3) {
+			return "III";
+		}
+		return "";
+		
 	}
 }

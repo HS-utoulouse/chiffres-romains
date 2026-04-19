@@ -17,5 +17,11 @@ class ChiffresRomainsTest {
 	void ITER1() {
 		assertEquals(c.toChiffresRomains(1), "I");
 	}
+	
+	@Test
+	void ITER2() {
+		assertEquals(c.toChiffresRomains(2), "II");
+		assertEquals(c.toChiffresRomains(3), "III");
+	}
 
 }
