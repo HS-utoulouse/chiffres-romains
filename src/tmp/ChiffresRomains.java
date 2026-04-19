@@ -2,52 +2,32 @@ package tmp;
 
 public class ChiffresRomains {
 
-	public ChiffresRomains() {
-		super();
-	}
+    // Les "valeurs importantes" extraites du document [cite: 33, 34, 46]
+    private static final int[] VALEURS = {
+        1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1
+    };
+    
+    private static final String[] SYMBOLES = {
+        "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"
+    };
 
-	public String toChiffresRomains(int nbr) {
-		if (nbr <= 0 || nbr >= 4000) {
-			throw new IllegalArgumentException();
-		}
+    public String toChiffresRomains(int nbr) {
+        // Itération 3 : Robustesse [cite: 11, 12]
+        if (nbr <= 0 || nbr >= 4000) {
+            throw new IllegalArgumentException();
+        }
 
-		String resultat = "";
-		int reste = nbr;
-		
-		while (reste >= 1000) {
-			resultat += "M";
-			reste -= 1000;
-		}
+        StringBuilder resultat = new StringBuilder();
+        int reste = nbr;
 
-		while (reste >= 100) {
-			resultat += "C";
-			reste -= 100;
-		}
-		
-		while (reste >= 10) {
-			resultat += "X";
-			reste -= 10;
-		}
+        // On parcourt les tableaux. Si le reste est >= à la valeur, on ajoute le symbole.
+        for (int i = 0; i < VALEURS.length; i++) {
+            while (reste >= VALEURS[i]) {
+                resultat.append(SYMBOLES[i]);
+                reste -= VALEURS[i];
+            }
+        }
 
-		if (reste == 9) {
-			resultat += "IX";
-			reste -= 9;
-		}
-		if (reste >= 5) {
-			resultat += "V";
-			reste -= 5;
-		}
-
-		if (reste == 4) {
-			resultat += "IV";
-			reste -= 4;
-		}
-
-		while (reste >= 1) {
-			resultat += "I";
-			reste -= 1;
-		}
-
-		return resultat;
-	}
+        return resultat.toString();
+    }
 }
