@@ -1,27 +1,34 @@
 package tmp;
 
 public class ChiffresRomains {
-	
-	
-	public ChiffresRomains() {
-		super();
-	}
 
-	public String toChiffresRomains(int nbr) {
-		if (nbr <= 0 || nbr >= 4000) {
-			throw new IllegalArgumentException();
-		}
-		
-		if(nbr == 1) {
-			return "I";
-		}else if(nbr == 2) {
-			return "II";
-		}else if(nbr == 3) {
-			return "III";
-		}else if(nbr == 4) {
-			return "IV";
-		}
-		return "";
-		
-	}
+    public ChiffresRomains() {
+        super();
+    }
+
+    public String toChiffresRomains(int nbr) {
+        if (nbr <= 0 || nbr >= 4000) {
+            throw new IllegalArgumentException();
+        }
+
+        String resultat = "";
+        int reste = nbr;
+
+        if (reste >= 5) {
+            resultat += "V";
+            reste -= 5;
+        }
+
+        if (reste == 4) {
+            resultat += "IV";
+            reste -= 4;
+        }
+
+        while (reste >= 1) {
+            resultat += "I";
+            reste -= 1;
+        }
+
+        return resultat;
+    }
 }

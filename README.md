@@ -2,7 +2,7 @@
 - [x] ITER2  : les unités simples : 2 et 3
 - [x] ITER3  : Robustesse et cas limites
 - [x] ITER4  : Première valeur spéciale : 4 –> “IV”
-- [ ] ITER5  : La valeur 5 et au-delà : 5, 6, 8
+- [x] ITER5  : La valeur 5 et au-delà : 5, 6, 8
 - [ ] ITER6  : Deuxième cas soustractif : 9 –> “IX”
 - [ ] ITER7  : Les dizaines
 - [ ] ITER8  : le petit mix : 11 –> “XI”, 34 –> “XXXIV”
