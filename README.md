@@ -1,4 +1,4 @@
-- [ ] ITER1  : 1 donne “I”
+- [x] ITER1  : 1 donne “I”
 - [ ] ITER2  : les unités simples : 2 et 3
 - [ ] ITER3  : Robustesse et cas limites
 - [ ] ITER4  : Première valeur spéciale : 4 –> “IV”
