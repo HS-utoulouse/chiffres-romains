@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 
 class ChiffresRomainsTest {
 	ChiffresRomains c;
-	
+
 	@BeforeEach
-	void init(){
+	void init() {
 		c = new ChiffresRomains();
 	}
 
@@ -17,43 +17,39 @@ class ChiffresRomainsTest {
 	void ITER1() {
 		assertEquals(c.toChiffresRomains(1), "I");
 	}
-	
+
 	@Test
 	void ITER2() {
 		assertEquals(c.toChiffresRomains(2), "II");
 		assertEquals(c.toChiffresRomains(3), "III");
 	}
-	
+
 	@Test
 	void ITER3() {
 		assertThrows(IllegalArgumentException.class, () -> c.toChiffresRomains(0));
 		assertThrows(IllegalArgumentException.class, () -> c.toChiffresRomains(40000));
 	}
-	
+
 	@Test
 	void ITER4() {
 		assertEquals(c.toChiffresRomains(4), "IV");
 	}
-	
+
 	@Test
 	void ITER5() {
 		assertEquals(c.toChiffresRomains(5), "V");
 		assertEquals(c.toChiffresRomains(6), "VI");
 		assertEquals(c.toChiffresRomains(7), "VII");
 	}
-	
+
 	@Test
 	void ITER6() {
 		assertEquals(c.toChiffresRomains(9), "IX");
 	}
-	
-	
+
+	@Test
+	void ITER7() {
+		assertEquals(c.toChiffresRomains(30), "XXX");
+	}
 
 }
-
-
-
-
-
-
-
