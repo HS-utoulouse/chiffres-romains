@@ -1,0 +1,10 @@
+- [ ] ITER1  : 1 donne “I”
+- [ ] ITER2  : les unités simples : 2 et 3
+- [ ] ITER3  : Robustesse et cas limites
+- [ ] ITER4  : Première valeur spéciale : 4 –> “IV”
+- [ ] ITER5  : La valeur 5 et au-delà : 5, 6, 8
+- [ ] ITER6  : Deuxième cas soustractif : 9 –> “IX”
+- [ ] ITER7  : Les dizaines
+- [ ] ITER8  : le petit mix : 11 –> “XI”, 34 –> “XXXIV”
+- [ ] ITER9  : extension aux centaines et aux milliers : 100 –> “C”, 2000 –> “MM”
+- [ ] ITER10 :Le grand mix : cas complexes
